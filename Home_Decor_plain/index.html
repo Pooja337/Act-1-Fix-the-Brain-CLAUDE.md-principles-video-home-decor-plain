@@ -1,0 +1,2292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Decor Plain</title>
+  <meta name="description"
+    content="Shop colourful, handcrafted home decor, cushions, ceramics, furniture and gifts inspired by the soul of India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+  <script>
+    (function () {
+      const saved = localStorage.getItem('theme');
+      const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    })();
+  </script>
+  <style>
+    :root {
+      --navy: #1a2034;
+      --orange: #e05c2a;
+      --teal: #2a9d8f;
+      --yellow: #f4c430;
+      --red: #e3302b;
+      --white: #fff;
+      --light: #f8f8f8;
+      --border: #e0e0e0;
+      --text: #222;
+      --muted: #666;
+      --ink: #1a2034;
+      --font: "Open Sans", sans-serif;
+      --tr: .25s ease
+    }
+
+    [data-theme="dark"] {
+      --white: #14161f;
+      --light: #1b1e29;
+      --border: #2b2f3d;
+      --text: #e8e8ec;
+      --muted: #a3a8b5;
+      --ink: #eef1f4;
+    }
+
+    body {
+      transition: background var(--tr), color var(--tr)
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: var(--font);
+      color: var(--text);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    ul {
+      list-style: none
+    }
+
+    img {
+      display: block;
+      max-width: 100%
+    }
+
+    button {
+      cursor: pointer;
+      font-family: var(--font);
+      border: none;
+      background: none
+    }
+
+    /* ANNOUNCEMENT */
+    .ann {
+      background: var(--navy);
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: .45rem 0;
+      overflow: hidden;
+      white-space: nowrap
+    }
+
+    .mq-t {
+      display: inline-block;
+      animation: mq 28s linear infinite
+    }
+
+    .mq-t span {
+      display: inline-block;
+      padding: 0 2.5rem
+    }
+
+    .mq-t span::before {
+      content: "✦";
+      margin-right: .75rem;
+      color: var(--yellow)
+    }
+
+    @keyframes mq {
+      from {
+        transform: translateX(0)
+      }
+
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    /* HEADER */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      transition: box-shadow var(--tr)
+    }
+
+    header.sc {
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .08)
+    }
+
+    .h-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .8rem 5%;
+      max-width: 1600px;
+      margin: 0 auto;
+      gap: 1rem
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--ink);
+      flex-shrink: 0
+    }
+
+    .logo em {
+      color: var(--orange);
+      font-style: normal
+    }
+
+    .h-srch {
+      flex: 1;
+      max-width: 460px;
+      position: relative
+    }
+
+    .h-srch input {
+      width: 100%;
+      padding: .55rem 2.5rem .55rem 1rem;
+      border: 1.5px solid var(--border);
+      font-family: var(--font);
+      font-size: .875rem;
+      outline: none;
+      transition: border-color var(--tr);
+      border-radius: 0
+    }
+
+    .h-srch input:focus {
+      border-color: var(--navy)
+    }
+
+    .h-srch button {
+      position: absolute;
+      right: .7rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted)
+    }
+
+    .h-srch svg {
+      width: 18px;
+      height: 18px
+    }
+
+    .h-acts {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem
+    }
+
+    .abt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .2rem;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--text);
+      transition: color var(--tr);
+      position: relative
+    }
+
+    .abt:hover {
+      color: var(--orange)
+    }
+
+    .abt svg {
+      width: 22px;
+      height: 22px
+    }
+
+    .bg {
+      position: absolute;
+      top: -5px;
+      right: -8px;
+      background: var(--orange);
+      color: #fff;
+      font-size: .6rem;
+      font-weight: 700;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .tgbtn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit
+    }
+
+    .tgbtn .ic-moon {
+      display: none
+    }
+
+    [data-theme="dark"] .tgbtn .ic-sun {
+      display: none
+    }
+
+    [data-theme="dark"] .tgbtn .ic-moon {
+      display: block
+    }
+
+    .notif-wrap {
+      position: relative
+    }
+
+    .nbell {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit
+    }
+
+    .npanel {
+      display: none;
+      position: absolute;
+      top: calc(100% + 14px);
+      right: -10px;
+      width: 320px;
+      max-height: 380px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--orange);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+      z-index: 400;
+      flex-direction: column
+    }
+
+    .npanel.open {
+      display: flex
+    }
+
+    .npanel-hd {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .8rem 1rem;
+      border-bottom: 1px solid var(--border);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--ink)
+    }
+
+    .npanel-hd button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: .68rem;
+      font-weight: 700;
+      text-transform: none;
+      letter-spacing: 0;
+      color: var(--orange)
+    }
+
+    .npanel-list {
+      overflow-y: auto;
+      max-height: 320px
+    }
+
+    .npanel-empty {
+      padding: 1.5rem 1rem;
+      text-align: center;
+      font-size: .82rem;
+      color: var(--text);
+      opacity: .6
+    }
+
+    .nitem {
+      display: flex;
+      gap: .65rem;
+      align-items: flex-start;
+      padding: .75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      font-size: .82rem
+    }
+
+    .nitem:last-child {
+      border-bottom: none
+    }
+
+    .nitem.unread {
+      background: var(--light)
+    }
+
+    .nitem .nic {
+      font-size: 1.1rem;
+      line-height: 1
+    }
+
+    .nitem .nbody {
+      flex: 1;
+      min-width: 0
+    }
+
+    .nitem .nmsg {
+      color: var(--ink);
+      font-weight: 600
+    }
+
+    .nitem .ntime {
+      display: block;
+      margin-top: .2rem;
+      font-size: .68rem;
+      color: var(--text);
+      opacity: .6
+    }
+
+    /* NAV */
+    .main-nav {
+      border-top: 1px solid var(--border)
+    }
+
+    .nav-in {
+      display: flex;
+      justify-content: center;
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 0 5%
+    }
+
+    .ni {
+      position: relative
+    }
+
+    .ni>a {
+      display: block;
+      padding: .8rem 1.1rem;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--ink);
+      transition: color var(--tr);
+      white-space: nowrap
+    }
+
+    .ni>a:hover,
+    .ni>a.act {
+      color: var(--orange)
+    }
+
+    .ni>a.act {
+      border-bottom: 2.5px solid var(--orange)
+    }
+
+    .dd {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--orange);
+      min-width: 190px;
+      z-index: 300;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .07)
+    }
+
+    .ni:hover .dd {
+      display: block
+    }
+
+    .dd a {
+      display: block;
+      padding: .6rem 1.1rem;
+      font-size: .8rem;
+      font-weight: 600;
+      border-bottom: 1px solid #f0f0f0;
+      transition: background var(--tr), color var(--tr)
+    }
+
+    .dd a:hover {
+      background: var(--light);
+      color: var(--orange)
+    }
+
+    .hbg {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: .5rem
+    }
+
+    .hbg span {
+      width: 24px;
+      height: 2px;
+      background: var(--ink);
+      transition: all .3s
+    }
+
+    .mnav {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--white);
+      z-index: 999;
+      flex-direction: column;
+      padding: 2rem;
+      overflow-y: auto
+    }
+
+    .mnav.open {
+      display: flex
+    }
+
+    .mnav-hd {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem
+    }
+
+    .mc {
+      font-size: 1.4rem;
+      font-weight: 700
+    }
+
+    .ml a {
+      display: block;
+      padding: .9rem 0;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      border-bottom: 1px solid var(--border);
+      color: var(--ink)
+    }
+
+    /* HERO */
+    .hw {
+      position: relative;
+      overflow: hidden;
+      height: clamp(420px, 62vw, 560px)
+    }
+
+    .sl {
+      display: none;
+      position: absolute;
+      inset: 0
+    }
+
+    .sl.on {
+      display: block
+    }
+
+    .sl img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top
+    }
+
+    .slov {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, .45) 0%, rgba(0, 0, 0, .5) 60%, rgba(0, 0, 0, .6) 100%)
+    }
+
+    .slc {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: clamp(.5rem, 1.4vw, .9rem);
+      padding: 2rem 6%;
+      margin: 0 auto;
+      color: #fff;
+      max-width: min(640px, 92%);
+      z-index: 2
+    }
+
+    .ey {
+      font-size: clamp(.68rem, 1vw, .75rem);
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, .35)
+    }
+
+    .slc h1 {
+      font-size: clamp(1.55rem, 4.2vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.18;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, .35)
+    }
+
+    .slc p {
+      font-size: clamp(.82rem, 1.3vw, .95rem);
+      opacity: .92;
+      max-width: 440px;
+      line-height: 1.55;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, .3)
+    }
+
+    .hbtns {
+      display: flex;
+      justify-content: center;
+      gap: .85rem;
+      flex-wrap: wrap;
+      margin-top: .35rem
+    }
+
+    .bp {
+      display: inline-block;
+      padding: .7rem 1.75rem;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      background: var(--orange);
+      color: #fff;
+      border: 2px solid var(--orange);
+      transition: all var(--tr)
+    }
+
+    .bp:hover {
+      background: transparent;
+      color: var(--orange)
+    }
+
+    .bs {
+      display: inline-block;
+      padding: .7rem 1.75rem;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      background: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+      transition: all var(--tr)
+    }
+
+    .bs:hover {
+      background: #fff;
+      color: var(--navy)
+    }
+
+    .sarr {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, .9);
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: background var(--tr);
+      font-size: 1.4rem;
+      color: var(--navy)
+    }
+
+    .sarr:hover {
+      background: #fff
+    }
+
+    .sp {
+      left: 1.25rem
+    }
+
+    .sn {
+      right: 1.25rem
+    }
+
+    .sdots {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: .45rem
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .5);
+      border: none;
+      transition: all var(--tr)
+    }
+
+    .dot.on {
+      background: #fff;
+      transform: scale(1.3)
+    }
+
+    /* TRUST */
+    .tr {
+      background: var(--light);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border)
+    }
+
+    .tr-in {
+      display: flex;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto
+    }
+
+    .ti {
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .9rem 2rem;
+      border-right: 1px solid var(--border);
+      flex: 1;
+      justify-content: center
+    }
+
+    .ti:last-child {
+      border-right: none
+    }
+
+    .ti svg {
+      width: 26px;
+      height: 26px;
+      flex-shrink: 0;
+      color: var(--orange)
+    }
+
+    .ti strong {
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      display: block
+    }
+
+    .ti span {
+      font-size: .72rem;
+      color: var(--muted)
+    }
+
+    /* LAYOUT */
+    .sec {
+      padding: 3rem 5%;
+      max-width: 1600px;
+      margin: 0 auto
+    }
+
+    .stit {
+      font-size: 1.4rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--ink);
+      margin-bottom: .3rem
+    }
+
+    .ssub {
+      font-size: .85rem;
+      color: var(--muted);
+      margin-bottom: 1.75rem
+    }
+
+    .shd {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+      gap: .5rem
+    }
+
+    .naf {
+      display: flex;
+      gap: .6rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem
+    }
+
+    .nafb {
+      padding: .5rem 1.1rem;
+      border: 1px solid var(--ink);
+      border-radius: 999px;
+      background: transparent;
+      color: var(--ink);
+      font-size: .78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      cursor: pointer;
+      transition: background .2s, color .2s
+    }
+
+    .nafb:hover {
+      background: var(--navy);
+      color: #fff
+    }
+
+    .nafb.on {
+      background: var(--navy);
+      color: #fff
+    }
+
+    .pc3.fhide {
+      display: none
+    }
+
+    .va {
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--orange);
+      border-bottom: 1.5px solid var(--orange);
+      transition: opacity var(--tr)
+    }
+
+    .va:hover {
+      opacity: .7
+    }
+
+    /* CATEGORY CIRCLES */
+    .cs {
+      display: flex;
+      gap: .85rem;
+      overflow-x: auto;
+      padding-bottom: .5rem;
+      scrollbar-width: none
+    }
+
+    .cs::-webkit-scrollbar {
+      display: none
+    }
+
+    .ct {
+      flex-shrink: 0;
+      width: 130px;
+      text-align: center;
+      cursor: pointer
+    }
+
+    .ci {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto .65rem;
+      border: 3px solid transparent;
+      transition: border-color var(--tr), transform var(--tr)
+    }
+
+    .ct:hover .ci {
+      border-color: var(--orange);
+      transform: translateY(-4px)
+    }
+
+    .ci img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .ct span {
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--ink)
+    }
+
+    /* BANNER GRID */
+    .bg2 {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 1rem
+    }
+
+    .bi {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end
+    }
+
+    .bi img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .6s ease;
+      min-height: 260px
+    }
+
+    .bi:hover img {
+      transform: scale(1.03)
+    }
+
+    .bov {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, .65) 0%, transparent 65%)
+    }
+
+    .bc2 {
+      position: absolute;
+      padding: 1.25rem;
+      color: #fff
+    }
+
+    .btag {
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      margin-bottom: .35rem
+    }
+
+    .bc2 h3 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: .65rem
+    }
+
+    .bsm {
+      display: inline-block;
+      padding: .5rem 1.1rem;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      background: #fff;
+      color: var(--navy);
+      transition: background var(--tr), color var(--tr)
+    }
+
+    .bsm:hover {
+      background: var(--orange);
+      color: #fff
+    }
+
+    /* PRODUCT GRID */
+    .pg {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.1rem
+    }
+
+    .pc3 {
+      position: relative;
+      cursor: pointer
+    }
+
+    .pim {
+      position: relative;
+      overflow: hidden;
+      background: var(--light);
+      aspect-ratio: 3/4;
+      margin-bottom: .8rem
+    }
+
+    .pim img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease
+    }
+
+    .pc3:hover .pim img {
+      transform: scale(1.06)
+    }
+
+    .pbg {
+      position: absolute;
+      top: .65rem;
+      left: .65rem;
+      display: flex;
+      flex-direction: column;
+      gap: .3rem;
+      z-index: 2
+    }
+
+    .bdg {
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: .22rem .55rem;
+      color: #fff
+    }
+
+    .bs2 {
+      background: var(--red)
+    }
+
+    .bn {
+      background: var(--teal)
+    }
+
+    .bh {
+      background: var(--orange)
+    }
+
+    .pa {
+      position: absolute;
+      top: .65rem;
+      right: .65rem;
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+      z-index: 2;
+      opacity: 0;
+      transform: translateX(8px);
+      transition: all var(--tr)
+    }
+
+    .pc3:hover .pa {
+      opacity: 1;
+      transform: translateX(0)
+    }
+
+    .ib {
+      width: 34px;
+      height: 34px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+      transition: background var(--tr), color var(--tr)
+    }
+
+    .ib:hover {
+      background: var(--orange);
+      color: #fff
+    }
+
+    .ib svg {
+      width: 16px;
+      height: 16px
+    }
+
+    .ib.won svg {
+      fill: var(--red);
+      stroke: var(--red)
+    }
+
+    .patc {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #e91e8c;
+      color: #fff;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .65rem;
+      text-align: center;
+      transform: translateY(100%);
+      transition: transform .3s ease;
+      border: none;
+      cursor: pointer;
+      width: 100%
+    }
+
+    .pc3:hover .patc {
+      transform: translateY(0)
+    }
+
+    .patc:hover {
+      background: var(--orange)
+    }
+
+    .pn {
+      font-size: .83rem;
+      font-weight: 600;
+      margin-bottom: .22rem;
+      line-height: 1.4
+    }
+
+    .pcat {
+      font-size: .72rem;
+      color: var(--muted);
+      margin-bottom: .3rem;
+      text-transform: uppercase;
+      letter-spacing: .04em
+    }
+
+    .pst {
+      display: flex;
+      align-items: center;
+      gap: .25rem;
+      margin-bottom: .35rem
+    }
+
+    .st {
+      color: #f4c430;
+      font-size: .78rem;
+      letter-spacing: .05em
+    }
+
+    .rc {
+      font-size: .7rem;
+      color: var(--muted)
+    }
+
+    .pp {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      font-weight: 700
+    }
+
+    .pcp {
+      font-size: .95rem;
+      color: var(--ink)
+    }
+
+    .pop {
+      font-size: .82rem;
+      color: var(--muted);
+      text-decoration: line-through
+    }
+
+    .pdp {
+      font-size: .75rem;
+      color: var(--red);
+      font-weight: 700
+    }
+
+    /* PROMO BAND */
+    .promo {
+      background: var(--navy);
+      color: #fff;
+      text-align: center;
+      padding: 3.5rem 5%
+    }
+
+    .ptag {
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      margin-bottom: .65rem
+    }
+
+    .promo h2 {
+      font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+      font-weight: 800;
+      margin-bottom: .65rem;
+      line-height: 1.15
+    }
+
+    .promo p {
+      font-size: .95rem;
+      opacity: .85;
+      margin-bottom: 1.5rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    /* TESTIMONIALS */
+    .tg {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem
+    }
+
+    .tc {
+      background: var(--white);
+      padding: 1.6rem;
+      border: 1px solid var(--border);
+      transition: box-shadow var(--tr)
+    }
+
+    .tc:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, .07)
+    }
+
+    .tst {
+      color: #f4c430;
+      font-size: 1rem;
+      margin-bottom: .65rem
+    }
+
+    .tc p {
+      font-size: .875rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: .85rem;
+      font-style: italic
+    }
+
+    .tau {
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--ink)
+    }
+
+    /* GALLERY */
+    .gg {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: .4rem
+    }
+
+    .gi {
+      aspect-ratio: 1;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer
+    }
+
+    .gi img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease
+    }
+
+    .gi:hover img {
+      transform: scale(1.08)
+    }
+
+    .gov {
+      position: absolute;
+      inset: 0;
+      background: rgba(26, 32, 52, .5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity var(--tr)
+    }
+
+    .gi:hover .gov {
+      opacity: 1
+    }
+
+    .gov span {
+      color: #fff;
+      font-size: 1.4rem
+    }
+
+    /* NEWSLETTER */
+    .nl {
+      background: var(--orange);
+      padding: 2.75rem 5%;
+      text-align: center;
+      color: #fff
+    }
+
+    .nl h2 {
+      font-size: 1.65rem;
+      font-weight: 800;
+      margin-bottom: .45rem
+    }
+
+    .nl p {
+      font-size: .9rem;
+      opacity: .9;
+      margin-bottom: 1.35rem
+    }
+
+    .nlf {
+      display: flex;
+      max-width: 460px;
+      margin: 0 auto
+    }
+
+    .nlf input {
+      flex: 1;
+      padding: .75rem 1.1rem;
+      font-family: var(--font);
+      font-size: .85rem;
+      border: 2px solid #fff;
+      outline: none;
+      color: var(--text);
+      border-radius: 0
+    }
+
+    .nlf button {
+      padding: .75rem 1.35rem;
+      background: var(--navy);
+      color: #fff;
+      font-family: var(--font);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      border: 2px solid var(--navy);
+      cursor: pointer;
+      transition: background var(--tr)
+    }
+
+    .nlf button:hover {
+      background: #0f1424
+    }
+
+    .nlok {
+      display: none;
+      font-weight: 700;
+      font-size: .95rem;
+      margin-top: .9rem;
+      color: var(--yellow)
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy);
+      color: rgba(255, 255, 255, .75);
+      padding: 3.5rem 5% 1.75rem
+    }
+
+    .fg {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      max-width: 1400px;
+      margin: 0 auto 2.5rem
+    }
+
+    .flog {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #fff;
+      display: block;
+      margin-bottom: .9rem
+    }
+
+    .fb p {
+      font-size: .85rem;
+      line-height: 1.7;
+      margin-bottom: 1.1rem
+    }
+
+    .soc {
+      display: flex;
+      gap: .65rem
+    }
+
+    .sa {
+      width: 34px;
+      height: 34px;
+      border: 1px solid rgba(255, 255, 255, .2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--tr), border-color var(--tr)
+    }
+
+    .sa:hover {
+      background: var(--orange);
+      border-color: var(--orange)
+    }
+
+    .sa svg {
+      width: 15px;
+      height: 15px;
+      fill: #fff
+    }
+
+    .fc h4 {
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: #fff;
+      margin-bottom: 1.1rem
+    }
+
+    .fc ul {
+      display: flex;
+      flex-direction: column;
+      gap: .55rem
+    }
+
+    .fc a {
+      font-size: .85rem;
+      transition: color var(--tr)
+    }
+
+    .fc a:hover {
+      color: var(--orange)
+    }
+
+    .fbot {
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      padding-top: 1.35rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: .85rem;
+      font-size: .78rem
+    }
+
+    .pio {
+      background: #fff;
+      color: var(--navy);
+      font-size: .62rem;
+      font-weight: 700;
+      padding: .18rem .45rem
+    }
+
+    .pays {
+      display: flex;
+      gap: .4rem;
+      align-items: center
+    }
+
+    .fli {
+      display: flex;
+      gap: 1.1rem
+    }
+
+    .fli a {
+      font-size: .78rem;
+      transition: color var(--tr)
+    }
+
+    .fli a:hover {
+      color: var(--orange)
+    }
+
+    /* TOASTS */
+    .toast-wrap {
+      position: fixed;
+      bottom: 1.75rem;
+      left: 1.75rem;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: .6rem
+    }
+
+    .toast {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      background: var(--navy);
+      color: #fff;
+      padding: .8rem 1.1rem;
+      font-size: .8rem;
+      font-weight: 600;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+      min-width: 240px;
+      max-width: 320px;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity .25s ease, transform .25s ease
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: none
+    }
+
+    #btt {
+      position: fixed;
+      bottom: 1.75rem;
+      right: 1.75rem;
+      width: 46px;
+      height: 46px;
+      background: var(--orange);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--tr);
+      z-index: 100;
+      box-shadow: 0 4px 14px rgba(224, 92, 42, .4)
+    }
+
+    .btt.show,
+    #btt.show {
+      opacity: 1;
+      pointer-events: auto
+    }
+
+    #btt svg {
+      width: 20px;
+      height: 20px
+    }
+
+    /* REVEAL */
+    .rv {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .6s ease, transform .6s ease
+    }
+
+    .rv.vis {
+      opacity: 1;
+      transform: none
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:1100px) {
+      .pg {
+        grid-template-columns: repeat(3, 1fr)
+      }
+
+      .gg {
+        grid-template-columns: repeat(3, 1fr)
+      }
+    }
+
+    @media(max-width:900px) {
+      .bg2 {
+        grid-template-columns: 1fr
+      }
+
+      .tg {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .fg {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.75rem
+      }
+
+      .tr-in {
+        flex-wrap: wrap
+      }
+
+      .ti {
+        flex: 1 1 45%;
+        border-right: none;
+        border-bottom: 1px solid var(--border)
+      }
+    }
+
+    @media(max-width:768px) {
+      .main-nav {
+        display: none
+      }
+
+      .hbg {
+        display: flex
+      }
+
+      .h-srch {
+        display: none
+      }
+
+      .pg {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .gg {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .tg {
+        grid-template-columns: 1fr
+      }
+
+      .hw {
+        height: clamp(360px, 78vw, 460px)
+      }
+
+      .slc {
+        padding: 1.5rem 6%;
+        max-width: 100%;
+      }
+
+      .slc p {
+        max-width: 100%
+      }
+    }
+
+    @media(max-width:480px) {
+      .pg {
+        grid-template-columns: repeat(2, 1fr);
+        gap: .65rem
+      }
+
+      .fg {
+        grid-template-columns: 1fr
+      }
+
+      .fbot {
+        flex-direction: column;
+        text-align: center
+      }
+
+      .nlf {
+        flex-direction: column
+      }
+
+      .hw {
+        height: clamp(340px, 92vw, 420px)
+      }
+
+      .hbtns {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%
+      }
+
+      .hbtns a {
+        text-align: center
+      }
+
+      .abt span {
+        display: none
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="ann">
+    <div class="mq-t">
+      <span>FREE SHIPPING ON ORDERS ABOVE Rs.499</span>
+      <span>EASY 30-DAY RETURNS</span>
+      <span>FLAT 20% OFF ON YOUR FIRST ORDER - CODE: WELCOME20</span>
+      <span>SHOP NEW ARRIVALS NOW</span>
+      <span>FREE SHIPPING ON ORDERS ABOVE Rs.499</span>
+      <span>EASY 30-DAY RETURNS</span>
+      <span>FLAT 20% OFF ON YOUR FIRST ORDER - CODE: WELCOME20</span>
+      <span>SHOP NEW ARRIVALS NOW</span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="hdr">
+    <div class="h-top">
+      <button class="hbg" id="hbg" aria-label="Open Menu"><span></span><span></span><span></span></button>
+      <a href="#" class="logo">ATELIER <em>HOME</em></a>
+      <div class="h-srch">
+        <input type="search" id="hsi" placeholder="Search cushions, ceramics, furniture..." aria-label="Search">
+        <button aria-label="Search" id="hsb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg></button>
+      </div>
+      <div class="h-acts">
+        <button class="abt tgbtn" id="tgbtn" aria-label="Toggle dark mode">
+          <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="4.5" />
+            <path
+              d="M12 2.5v2M12 19.5v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2.5 12h2M19.5 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+          </svg>
+          <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+          <span>Theme</span>
+        </button>
+        <div class="abt notif-wrap">
+          <button class="abt nbell" id="nbell" aria-label="Notifications" aria-haspopup="true" aria-expanded="false">
+            <div style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8">
+                <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
+                <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+              </svg><span class="bg" id="nc" style="display:none">0</span></div><span>Alerts</span>
+          </button>
+          <div class="npanel" id="npanel">
+            <div class="npanel-hd"><span>Notifications</span><button id="nclear" type="button">Clear all</button></div>
+            <div class="npanel-list" id="nlist">
+              <div class="npanel-empty" id="nempty">No notifications yet</div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="abt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg><span>Account</span></a>
+        <a href="#" class="abt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+          </svg><span>Wishlist</span></a>
+        <a href="#" class="abt">
+          <div style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg><span class="bg" id="bc">0</span></div><span>Cart</span>
+        </a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="nav-in">
+        <div class="ni"><a href="#" class="act">Home</a></div>
+        <div class="ni"><a href="#shop">New Arrivals</a></div>
+        <div class="ni"><a href="#">Home Decor &#9660;</a>
+          <div class="dd"><a href="#">Cushions &amp; Covers</a><a href="#">Wall Art</a><a href="#">Vases &amp;
+              Planters</a><a href="#">Candles</a><a href="#">Mirrors</a></div>
+        </div>
+        <div class="ni"><a href="#">Furniture &#9660;</a>
+          <div class="dd"><a href="#">Sofas &amp; Armchairs</a><a href="#">Tables</a><a href="#">Storage</a><a
+              href="#">Beds</a></div>
+        </div>
+        <div class="ni"><a href="#">Kitchen &amp; Dining &#9660;</a>
+          <div class="dd"><a href="#">Mugs &amp; Drinkware</a><a href="#">Dinnerware</a><a href="#">Table Runners</a>
+          </div>
+        </div>
+        <div class="ni"><a href="#">Gifts</a></div>
+        <div class="ni"><a href="#" style="color:#e3302b">Sale &#128293;</a></div>
+        <div class="ni"><a href="#journal">Journal</a></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mnav" id="mnav">
+    <div class="mnav-hd"><span class="logo">ATELIER <em>HOME</em></span><button class="mc" id="mc">&#10005;</button>
+    </div>
+    <div class="ml">
+      <a href="#">Home</a><a href="#shop">New Arrivals</a><a href="#">Home Decor</a><a href="#">Furniture</a><a
+        href="#">Kitchen &amp; Dining</a><a href="#">Gifts</a><a href="#" style="color:#e3302b">Sale</a><a
+        href="#journal">Journal</a>
+    </div>
+  </div>
+
+  <!-- HERO SLIDER -->
+  <section class="hw">
+    <div class="sl on">
+      <img src="./assets/hero_banner_main.jpg" alt="Colourful Indian Home Decor" loading="eager">
+      <div class="slov"></div>
+      <div class="slc">
+        <div class="ey">New Collection 2026</div>
+        <h1>Colour Your World With Joy</h1>
+        <p>Handcrafted, vibrant home decor inspired by the soul of India.</p>
+        <div class="hbtns"><a href="#shop" class="bp">Shop Now</a><a href="#collections" class="bs">Explore</a></div>
+      </div>
+    </div>
+    <div class="sl">
+      <img src="./assets/decor_wallart_1_1787822638662.jpg" alt="Luxury Living Room" loading="lazy">
+      <div class="slov"></div>
+      <div class="slc">
+        <div class="ey">Bestsellers</div>
+        <h1>Timeless Spaces, Modern Living</h1>
+        <p>Curated furniture and decor for beautifully considered homes.</p>
+        <div class="hbtns"><a href="#bestsellers" class="bp">View Bestsellers</a></div>
+      </div>
+    </div>
+    <div class="sl">
+      <img src="./assets/decor_dining_1_1787822667118.jpg" alt="Dining Collection" loading="lazy">
+      <div class="slov"></div>
+      <div class="slc">
+        <div class="ey">Dining Collection</div>
+        <h1>Set The Perfect Table</h1>
+        <p>Elegant dining sets crafted from natural oak and warm-toned stone.</p>
+        <div class="hbtns"><a href="#shop" class="bp">Explore Dining</a></div>
+      </div>
+    </div>
+    <button class="sarr sp" id="sp">&#8249;</button>
+    <button class="sarr sn" id="sn">&#8250;</button>
+    <div class="sdots" id="sd"><button class="dot on"></button><button class="dot"></button><button
+        class="dot"></button></div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="tr">
+    <div class="tr-in">
+      <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <rect x="1" y="3" width="15" height="13" />
+          <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+          <circle cx="5.5" cy="18.5" r="2.5" />
+          <circle cx="18.5" cy="18.5" r="2.5" />
+        </svg>
+        <div><strong>Free Shipping</strong><span>On orders above Rs.499</span></div>
+      </div>
+      <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <polyline points="1 4 1 10 7 10" />
+          <path d="M3.51 15a9 9 0 1 0 .49-3.51" />
+        </svg>
+        <div><strong>Easy Returns</strong><span>30-day hassle-free</span></div>
+      </div>
+      <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </svg>
+        <div><strong>Secure Payments</strong><span>100% safe &amp; encrypted</span></div>
+      </div>
+      <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        </svg>
+        <div><strong>24/7 Support</strong><span>Always here for you</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHOP BY CATEGORY -->
+  <div class="sec" id="collections">
+    <div class="shd">
+      <div>
+        <h2 class="stit rv">Shop By Category</h2>
+        <p class="ssub rv">Discover our world of colour and craft</p>
+      </div><a href="#" class="va rv">View All</a>
+    </div>
+    <div class="cs">
+      <div class="ct rv">
+        <div class="ci"><img src="./assets/colorful_cushion.jpg" alt="Cushions" loading="lazy"></div>
+        <span>Cushions</span>
+      </div>
+      <div class="ct rv">
+        <div class="ci"><img src="./assets/decor_lamp_1_1787822626077.jpg" alt="Lighting" loading="lazy"></div>
+        <span>Lighting</span>
+      </div>
+      <div class="ct rv">
+        <div class="ci"><img src="./assets/decor_furniture_1_1787822653063.jpg" alt="Seating" loading="lazy"></div>
+        <span>Seating</span>
+      </div>
+      <div class="ct rv">
+        <div class="ci"><img src="./assets/decor_dining_1_1787822667118.jpg" alt="Dining" loading="lazy"></div>
+        <span>Dining</span>
+      </div>
+      <div class="ct rv">
+        <div class="ci"><img src="./assets/decor_wallart_1_1787822638662.jpg" alt="Living Room" loading="lazy"></div>
+        <span>Living Room</span>
+      </div>
+      <div class="ct rv">
+        <div class="ci"><img src="./assets/hero_banner_main.jpg" alt="Gifts" loading="lazy"
+            style="object-position:right"></div><span>Gifts</span>
+      </div>
+      <div class="ct rv">
+        <div class="ci"><img src="./assets/colorful_cushion.jpg" alt="Wall Art" loading="lazy"
+            style="filter:hue-rotate(160deg)"></div><span>Wall Art</span>
+      </div>
+      <div class="ct rv">
+        <div class="ci"><img src="./assets/decor_lamp_1_1787822626077.jpg" alt="Ceramics" loading="lazy"
+            style="filter:saturate(1.3)"></div><span>Ceramics</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDITORIAL BANNERS -->
+  <div class="sec" style="padding-top:0">
+    <div class="bg2 rv">
+      <div class="bi"><img src="./assets/hero_banner_main.jpg" alt="Featured">
+        <div class="bov"></div>
+        <div class="bc2">
+          <div class="btag">Featured</div>
+          <h3>Bold. Vibrant.<br>Beautifully Indian.</h3><a href="#shop" class="bsm">Shop Collection</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1rem">
+        <div class="bi"><img src="./assets/decor_furniture_1_1787822653063.jpg" alt="Seating">
+          <div class="bov"></div>
+          <div class="bc2">
+            <div class="btag">Furniture</div>
+            <h3>Iconic Seating</h3><a href="#shop" class="bsm">Explore</a>
+          </div>
+        </div>
+        <div class="bi"><img src="./assets/decor_lamp_1_1787822626077.jpg" alt="Lighting">
+          <div class="bov"></div>
+          <div class="bc2">
+            <div class="btag">Lighting</div>
+            <h3>Set The Mood</h3><a href="#shop" class="bsm">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEW ARRIVALS -->
+  <div id="shop" style="background:var(--light);padding:3rem 5%">
+    <div style="max-width:1600px;margin:0 auto">
+      <div class="shd">
+        <div>
+          <h2 class="stit rv">New Arrivals</h2>
+          <p class="ssub rv">Fresh pieces just landed</p>
+        </div><a href="#" class="va rv">View All</a>
+      </div>
+      <div class="naf rv" id="naf" role="group" aria-label="Filter new arrivals by category">
+        <button class="nafb on" data-cat="all">All</button>
+        <button class="nafb" data-cat="Cushions">Cushions</button>
+        <button class="nafb" data-cat="Lighting">Lighting</button>
+        <button class="nafb" data-cat="Seating">Seating</button>
+        <button class="nafb" data-cat="Sofas">Sofas</button>
+      </div>
+      <div class="pg" id="napg">
+        <div class="pc3 rv" data-cat="Cushions">
+          <div class="pim">
+            <div class="pbg"><span class="bdg bn">New</span></div><img src="./assets/colorful_cushion.jpg"
+              alt="Block Print Cushion" loading="lazy">
+            <div class="pa"><button class="ib wlb" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg></button></div><button class="patc" onclick="atc(this)">Add to Cart</button>
+          </div>
+          <div class="pcat">Cushions</div>
+          <div class="pn">Block Print Geometric Cushion Cover</div>
+          <div class="pst"><span class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rc">(128)</span>
+          </div>
+          <div class="pp"><span class="pcp">Rs.699</span><span class="pop">Rs.999</span><span class="pdp">30% off</span>
+          </div>
+        </div>
+        <div class="pc3 rv" data-cat="Lighting">
+          <div class="pim">
+            <div class="pbg"><span class="bdg bs2">Sale</span></div><img src="./assets/decor_lamp_1_1787822626077.jpg"
+              alt="Ceramic Lamp" loading="lazy">
+            <div class="pa"><button class="ib wlb" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg></button></div><button class="patc" onclick="atc(this)">Add to Cart</button>
+          </div>
+          <div class="pcat">Lighting</div>
+          <div class="pn">Handcrafted Ceramic Table Lamp</div>
+          <div class="pst"><span class="st">&#9733;&#9733;&#9733;&#9733;&#9734;</span><span class="rc">(86)</span></div>
+          <div class="pp"><span class="pcp">Rs.2,499</span><span class="pop">Rs.3,499</span><span class="pdp">28%
+              off</span></div>
+        </div>
+        <div class="pc3 rv" data-cat="Seating">
+          <div class="pim">
+            <div class="pbg"><span class="bdg bh">Bestseller</span></div><img
+              src="./assets/decor_furniture_1_1787822653063.jpg" alt="Lounge Chair" loading="lazy">
+            <div class="pa"><button class="ib wlb" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg></button></div><button class="patc" onclick="atc(this)">Add to Cart</button>
+          </div>
+          <div class="pcat">Seating</div>
+          <div class="pn">Sculptural Boucle Lounge Chair</div>
+          <div class="pst"><span class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rc">(214)</span>
+          </div>
+          <div class="pp"><span class="pcp">Rs.28,999</span><span class="pop">Rs.34,999</span><span class="pdp">17%
+              off</span></div>
+        </div>
+        <div class="pc3 rv" data-cat="Sofas">
+          <div class="pim">
+            <div class="pbg"><span class="bdg bn">New</span></div><img src="./assets/decor_wallart_1_1787822638662.jpg"
+              alt="Linen Sofa" loading="lazy" style="object-position:left center">
+            <div class="pa"><button class="ib wlb" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.8">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg></button></div><button class="patc" onclick="atc(this)">Add to Cart</button>
+          </div>
+          <div class="pcat">Sofas</div>
+          <div class="pn">Linen Sectional Sofa - Natural</div>
+          <div class="pst"><span class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rc">(52)</span></div>
+          <div class="pp"><span class="pcp">Rs.89,999</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROMO BAND -->
+  <div class="promo" id="bestsellers">
+    <div class="ptag rv">Limited Time Offer</div>
+    <h2 class="rv">Up To 40% Off<br>on Bestsellers</h2>
+    <p class="rv">Discover the pieces our customers love most - now at unbeatable prices. Offer ends soon.</p>
+    <a href="#" class="bp rv" style="display:inline-block">Shop The Sale</a>
+  </div>
+
+  <!-- BESTSELLERS -->
+  <div class="sec">
+    <div class="shd">
+      <div>
+        <h2 class="stit rv">Most Loved</h2>
+        <p class="ssub rv">Our customers' all-time favourites</p>
+      </div><a href="#" class="va rv">See All</a>
+    </div>
+    <div class="pg">
+      <div class="pc3 rv">
+        <div class="pim">
+          <div class="pbg"><span class="bdg bh">Bestseller</span></div><img
+            src="./assets/decor_dining_1_1787822667118.jpg" alt="Dining Table" loading="lazy">
+          <div class="pa"><button class="ib wlb" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg></button></div><button class="patc" onclick="atc(this)">Add to Cart</button>
+        </div>
+        <div class="pcat">Dining</div>
+        <div class="pn">Solid Oak Dining Table - 6 Seater</div>
+        <div class="pst"><span class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rc">(309)</span></div>
+        <div class="pp"><span class="pcp">Rs.64,999</span><span class="pop">Rs.74,999</span><span class="pdp">13%
+            off</span></div>
+      </div>
+      <div class="pc3 rv">
+        <div class="pim">
+          <div class="pbg"><span class="bdg bs2">Sale</span></div><img src="./assets/colorful_cushion.jpg"
+            alt="Cushion Set" loading="lazy">
+          <div class="pa"><button class="ib wlb" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg></button></div><button class="patc" onclick="atc(this)">Add to Cart</button>
+        </div>
+        <div class="pcat">Cushions</div>
+        <div class="pn">Folk Art Cushion Cover Set of 5</div>
+        <div class="pst"><span class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rc">(472)</span></div>
+        <div class="pp"><span class="pcp">Rs.1,999</span><span class="pop">Rs.3,499</span><span class="pdp">42%
+            off</span></div>
+      </div>
+      <div class="pc3 rv">
+        <div class="pim"><img src="./assets/decor_lamp_1_1787822626077.jpg" alt="Floor Lamp" loading="lazy">
+          <div class="pa"><button class="ib wlb" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg></button></div><button class="patc" onclick="atc(this)">Add to Cart</button>
+        </div>
+        <div class="pcat">Lighting</div>
+        <div class="pn">Wabi-Sabi Ceramic Floor Lamp</div>
+        <div class="pst"><span class="st">&#9733;&#9733;&#9733;&#9733;&#9734;</span><span class="rc">(91)</span></div>
+        <div class="pp"><span class="pcp">Rs.5,499</span></div>
+      </div>
+      <div class="pc3 rv">
+        <div class="pim">
+          <div class="pbg"><span class="bdg bn">New</span></div><img src="./assets/decor_furniture_1_1787822653063.jpg"
+            alt="Accent Chair" loading="lazy">
+          <div class="pa"><button class="ib wlb" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg></button></div><button class="patc" onclick="atc(this)">Add to Cart</button>
+        </div>
+        <div class="pcat">Seating</div>
+        <div class="pn">Rounded Boucle Accent Chair</div>
+        <div class="pst"><span class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="rc">(168)</span></div>
+        <div class="pp"><span class="pcp">Rs.18,999</span><span class="pop">Rs.22,999</span><span class="pdp">17%
+            off</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <div style="background:var(--light);padding:3rem 5%">
+    <div style="max-width:1600px;margin:0 auto">
+      <div class="shd">
+        <div>
+          <h2 class="stit rv">What Our Customers Say</h2>
+          <p class="ssub rv">Real reviews from real homes</p>
+        </div>
+      </div>
+      <div class="tg">
+        <div class="tc rv">
+          <div class="tst">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"The cushion covers are absolutely gorgeous! The colours are even more vibrant in person. My living room
+            has completely transformed."</p>
+          <div class="tau">- Priya Sharma, Mumbai</div>
+        </div>
+        <div class="tc rv">
+          <div class="tst">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Ordered the ceramic lamp for my study - it arrived beautifully packaged and looks stunning. Amazing
+            quality for the price!"</p>
+          <div class="tau">- Rahul Menon, Bangalore</div>
+        </div>
+        <div class="tc rv">
+          <div class="tst">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"The boucle chair is a dream. Incredibly comfortable and the craftsmanship is top-notch. Will definitely be
+            a returning customer."</p>
+          <div class="tau">- Ananya Kapoor, Delhi</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JOURNAL -->
+  <div id="journal" class="sec">
+    <div class="shd">
+      <div>
+        <h2 class="stit rv">From Our Journal</h2>
+        <p class="ssub rv">Design stories, tips &amp; inspiration</p>
+      </div><a href="#" class="va rv">All Articles</a>
+    </div>
+    <div class="pg" style="grid-template-columns:repeat(3,1fr)">
+      <div class="rv" style="cursor:pointer">
+        <div style="overflow:hidden;margin-bottom:.9rem;aspect-ratio:4/3"><img
+            src="./assets/decor_lamp_1_1787822626077.jpg" alt="Blog 1"
+            style="width:100%;height:100%;object-fit:cover;transition:transform .5s"
+            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"></div>
+        <div
+          style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--orange);margin-bottom:.35rem">
+          Design Philosophy</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:.45rem;color:var(--navy)">The Beauty of Imperfection
+        </h3>
+        <p style="font-size:.83rem;color:var(--muted);margin-bottom:.65rem;line-height:1.65">Exploring wabi-sabi
+          principles that inform our approach to handcrafted ceramics and natural stone.</p><a href="#"
+          style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--orange);border-bottom:1px solid var(--orange)">Read
+          More &#8594;</a>
+      </div>
+      <div class="rv" style="cursor:pointer">
+        <div style="overflow:hidden;margin-bottom:.9rem;aspect-ratio:4/3"><img
+            src="./assets/decor_dining_1_1787822667118.jpg" alt="Blog 2"
+            style="width:100%;height:100%;object-fit:cover;transition:transform .5s"
+            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"></div>
+        <div
+          style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--orange);margin-bottom:.35rem">
+          Materials</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:.45rem;color:var(--navy)">Designing With Natural
+          Materials</h3>
+        <p style="font-size:.83rem;color:var(--muted);margin-bottom:.65rem;line-height:1.65">Why we choose solid oak,
+          travertine, and hand-spun linen for pieces that age beautifully.</p><a href="#"
+          style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--orange);border-bottom:1px solid var(--orange)">Read
+          More &#8594;</a>
+      </div>
+      <div class="rv" style="cursor:pointer">
+        <div style="overflow:hidden;margin-bottom:.9rem;aspect-ratio:4/3"><img
+            src="./assets/decor_wallart_1_1787822638662.jpg" alt="Blog 3"
+            style="width:100%;height:100%;object-fit:cover;transition:transform .5s"
+            onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"></div>
+        <div
+          style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--orange);margin-bottom:.35rem">
+          Interiors</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:.45rem;color:var(--navy)">A Softer Approach to Modern
+          Living</h3>
+        <p style="font-size:.83rem;color:var(--muted);margin-bottom:.65rem;line-height:1.65">Balancing architectural
+          lines with warmth, texture, and inviting comfort of a real home.</p><a href="#"
+          style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--orange);border-bottom:1px solid var(--orange)">Read
+          More &#8594;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- INSTAGRAM GALLERY -->
+  <div style="padding:0 0 2.5rem">
+    <div style="text-align:center;padding:2rem 5% 1.35rem">
+      <h2 class="stit rv" style="margin:0 auto">@AtelierHome on Instagram</h2>
+      <p class="ssub rv" style="margin:.35rem auto 0">Tag us for a chance to be featured</p>
+    </div>
+    <div class="gg" style="grid-template-columns:repeat(6,1fr)">
+      <div class="gi rv"><img src="./assets/decor_cushions_1_1787822600417.jpg" alt="Insta 1" loading="lazy">
+        <div class="gov"><span>&#128247;</span></div>
+      </div>
+      <div class="gi rv"><img src="./assets/decor_ceramics_1_1787822612325.jpg" alt="Insta 2" loading="lazy">
+        <div class="gov"><span>&#128247;</span></div>
+      </div>
+      <div class="gi rv"><img src="./assets/decor_lamp_1_1787822626077.jpg" alt="Insta 3" loading="lazy">
+        <div class="gov"><span>&#128247;</span></div>
+      </div>
+      <div class="gi rv"><img src="./assets/decor_wallart_1_1787822638662.jpg" alt="Insta 4" loading="lazy">
+        <div class="gov"><span>&#128247;</span></div>
+      </div>
+      <div class="gi rv"><img src="./assets/decor_furniture_1_1787822653063.jpg" alt="Insta 5" loading="lazy">
+        <div class="gov"><span>&#128247;</span></div>
+      </div>
+      <div class="gi rv"><img src="./assets/decor_dining_1_1787822667118.jpg" alt="Insta 6" loading="lazy">
+        <div class="gov"><span>&#128247;</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <div class="nl">
+    <h2 class="rv">Stay Inspired. Stay Colourful.</h2>
+    <p class="rv">Get new arrivals, exclusive offers &amp; design inspiration straight to your inbox.</p>
+    <form class="nlf rv" id="nlf" novalidate><input type="email" id="nle" placeholder="Enter your email address"
+        required aria-label="Email"><button type="submit">Subscribe</button></form>
+    <div class="nlok" id="nlok">&#127881; Welcome aboard! Check your inbox for a special gift.</div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="fg">
+      <div class="fb"><span class="flog">ATELIER <em style="color:var(--orange);font-style:normal">HOME</em></span>
+        <p>Bringing colour, craft, and character to homes across India. Handpicked pieces, thoughtfully made.</p>
+        <div class="soc">
+          <a href="#" class="sa" aria-label="Instagram"><svg viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg></a>
+          <a href="#" class="sa" aria-label="Pinterest"><svg viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12s-5.373-12-12-12z" />
+            </svg></a>
+          <a href="#" class="sa" aria-label="Facebook"><svg viewBox="0 0 24 24">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg></a>
+        </div>
+      </div>
+      <div class="fc">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Cushions</a></li>
+          <li><a href="#">Lighting</a></li>
+          <li><a href="#">Furniture</a></li>
+          <li><a href="#">Gifts</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </div>
+      <div class="fc">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Journal</a></li>
+          <li><a href="#">Store Locator</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="fc">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <p>&copy; 2026 Atelier Home. All rights reserved.</p>
+      <div class="pays"><span class="pio">VISA</span><span class="pio">MC</span><span class="pio">UPI</span><span
+          class="pio">GPay</span><span class="pio">PhonePe</span></div>
+      <div class="fli"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <div class="toast-wrap" id="toastWrap"></div>
+
+  <button id="btt" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15" />
+    </svg></button>
+
+  <script>
+    const tgbtn = document.getElementById('tgbtn');
+    tgbtn.addEventListener('click', () => {
+      const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (dark) { document.documentElement.removeAttribute('data-theme'); localStorage.setItem('theme', 'light') }
+      else { document.documentElement.setAttribute('data-theme', 'dark'); localStorage.setItem('theme', 'dark') }
+    });
+    const hdr = document.getElementById('hdr'), btt = document.getElementById('btt');
+    window.addEventListener('scroll', () => { hdr.classList.toggle('sc', scrollY > 60); btt.classList.toggle('show', scrollY > 400) }, { passive: true });
+    btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    const hbg = document.getElementById('hbg'), mn = document.getElementById('mnav'), mc = document.getElementById('mc');
+    hbg.addEventListener('click', () => { mn.classList.add('open'); document.body.style.overflow = 'hidden' });
+    mc.addEventListener('click', () => { mn.classList.remove('open'); document.body.style.overflow = '' });
+    mn.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mn.classList.remove('open'); document.body.style.overflow = '' }));
+    mn.addEventListener('click', (e) => { if (e.target === mn) { mn.classList.remove('open'); document.body.style.overflow = '' } });
+    const sls = document.querySelectorAll('.sl'), dots = document.querySelectorAll('.dot');
+    let cur = 0, tmr;
+    function go(n) { sls[cur].classList.remove('on'); dots[cur].classList.remove('on'); cur = (n + sls.length) % sls.length; sls[cur].classList.add('on'); dots[cur].classList.add('on') }
+    function run() { tmr = setInterval(() => go(cur + 1), 5000) } function stop() { clearInterval(tmr) }
+    document.getElementById('sp').addEventListener('click', () => { stop(); go(cur - 1); run() });
+    document.getElementById('sn').addEventListener('click', () => { stop(); go(cur + 1); run() });
+    dots.forEach((d, i) => d.addEventListener('click', () => { stop(); go(i); run() }));
+    run();
+    document.querySelectorAll('.wlb').forEach(b => b.addEventListener('click', e => {
+      e.stopPropagation(); b.classList.toggle('won');
+      notify(b.classList.contains('won') ? '💛' : '🤍', b.classList.contains('won') ? 'Added to your wishlist' : 'Removed from your wishlist');
+    }));
+    const bc = document.getElementById('bc'); let cnt = 0;
+    function atc(b) {
+      cnt++; bc.textContent = cnt; const o = b.textContent; b.textContent = 'Added!'; b.style.background = 'var(--teal)'; setTimeout(() => { b.textContent = o; b.style.background = '' }, 1800);
+      const name = b.closest('.pc3')?.querySelector('.pn')?.textContent || 'Item';
+      notify('🛍️', `${name} added to your cart`);
+    }
+    document.getElementById('nlf').addEventListener('submit', e => { e.preventDefault(); const v = document.getElementById('nle').value.trim(); if (!v || !v.includes('@')) return; document.getElementById('nlf').style.display = 'none'; document.getElementById('nlok').style.display = 'block'; notify('🎉', 'You are subscribed! Check your inbox for a welcome gift.') });
+    const hsi = document.getElementById('hsi'), hsb = document.getElementById('hsb');
+    function runSearch() {
+      const q = hsi.value.trim();
+      if (!q) return;
+      notify('🔍', `Searching for "${q}"`);
+    }
+    hsb.addEventListener('click', runSearch);
+    hsi.addEventListener('keydown', e => { if (e.key === 'Enter') runSearch() });
+
+    /* TOASTS */
+    const toastWrap = document.getElementById('toastWrap');
+    function showToast(ic, msg) {
+      const t = document.createElement('div'); t.className = 'toast'; t.innerHTML = `<span>${ic}</span><span>${msg}</span>`;
+      toastWrap.appendChild(t); requestAnimationFrame(() => t.classList.add('show'));
+      setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 300) }, 3500);
+    }
+
+    /* NOTIFICATION CENTER */
+    const nbell = document.getElementById('nbell'), npanel = document.getElementById('npanel'),
+      nlist = document.getElementById('nlist'), nempty = document.getElementById('nempty'),
+      nc = document.getElementById('nc'), nclear = document.getElementById('nclear');
+    let notifs = [], unread = 0;
+
+    function renderNotifs() {
+      nempty.style.display = notifs.length ? 'none' : 'block';
+      nlist.querySelectorAll('.nitem').forEach(el => el.remove());
+      notifs.forEach(n => {
+        const el = document.createElement('div');
+        el.className = 'nitem' + (n.unread ? ' unread' : '');
+        el.innerHTML = `<span class="nic">${n.ic}</span><span class="nbody"><span class="nmsg">${n.msg}</span><span class="ntime">${n.time}</span></span>`;
+        nlist.appendChild(el);
+      });
+      nc.textContent = unread; nc.style.display = unread ? 'flex' : 'none';
+    }
+
+    function notify(ic, msg) {
+      showToast(ic, msg);
+      notifs.unshift({ ic, msg, unread: true, time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) });
+      if (notifs.length > 20) notifs.pop();
+      unread++;
+      renderNotifs();
+    }
+
+    nbell.addEventListener('click', e => {
+      e.stopPropagation();
+      const open = npanel.classList.toggle('open');
+      nbell.setAttribute('aria-expanded', open);
+      if (open) { unread = 0; notifs.forEach(n => n.unread = false); renderNotifs(); }
+    });
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.notif-wrap')) { npanel.classList.remove('open'); nbell.setAttribute('aria-expanded', 'false') }
+    });
+    nclear.addEventListener('click', e => { e.stopPropagation(); notifs = []; unread = 0; renderNotifs(); });
+    const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target) } }) }, { threshold: .1, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.rv').forEach((el, i) => { el.style.transitionDelay = `${(i % 5) * .07}s`; obs.observe(el) });
+    const naf = document.getElementById('naf'), naCards = document.querySelectorAll('#napg .pc3');
+    naf.addEventListener('click', e => {
+      const b = e.target.closest('.nafb'); if (!b) return;
+      naf.querySelectorAll('.nafb').forEach(x => x.classList.remove('on')); b.classList.add('on');
+      const cat = b.dataset.cat;
+      naCards.forEach(c => c.classList.toggle('fhide', cat !== 'all' && c.dataset.cat !== cat));
+    });
+  </script>
+</body>
+
+</html>
